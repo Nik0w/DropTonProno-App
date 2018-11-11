@@ -15,13 +15,66 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PronosticsPage {
 
-	slides: Array<{title: string, content: string}>;
+	matchs: Array<{title: string, content: any}>;
+	journees: Array<{nom: string}>;
 
 	constructor(public navCtrl: NavController, public navParams: NavParams) {
 
-		this.slides = [
-	  		{ title: 'Journée1', content: 'Bla bla 1' },
-			{ title: 'Journée2', content: 'Bla bla 2' }
+		this.journees = [
+			{nom: 'Journée1'},
+			{nom: 'Journée2'}
+
+		]
+
+		this.matchs = [
+			{
+				title: 'Match01',
+		  		content: {
+		  			'date':'10-10-2018',
+		  			'equipe1':'Union Bordeaux Bègles',
+		  			'equipe2':'Stade Toulousain'
+		  		}
+	  		},
+	  		{
+				title: 'Match02',
+		  		content: {
+		  			'date':'10-10-2018',
+		  			'equipe1':'Union Bordeaux Bègles',
+		  			'equipe2':'Stade Toulousain'
+		  		}
+	  		},
+	  		{
+				title: 'Match03',
+		  		content: {
+		  			'date':'10-10-2018',
+		  			'equipe1':'Union Bordeaux Bègles',
+		  			'equipe2':'Stade Toulousain'
+		  		}
+	  		},
+	  		{
+				title: 'Match01',
+		  		content: {
+		  			'date':'10-10-2018',
+		  			'equipe1':'Union Bordeaux Bègles',
+		  			'equipe2':'Stade Toulousain'
+		  		}
+	  		},
+	  		{
+				title: 'Match02',
+		  		content: {
+		  			'date':'10-10-2018',
+		  			'equipe1':'Union Bordeaux Bègles',
+		  			'equipe2':'Stade Toulousain'
+		  		}
+	  		},
+	  		{
+				title: 'Match03',
+		  		content: {
+		  			'date':'10-10-2018',
+		  			'equipe1':'Union Bordeaux Bègles',
+		  			'equipe2':'Stade Toulousain'
+		  		}
+	  		}
 		];
 	}
 
